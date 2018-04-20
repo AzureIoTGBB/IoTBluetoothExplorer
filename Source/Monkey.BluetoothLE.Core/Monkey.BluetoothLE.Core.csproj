@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Bluetooth\LE\KnownCharacteristics.json" />
+    <None Remove="Bluetooth\LE\KnownDescriptors.json" />
+    <None Remove="Bluetooth\LE\KnownServices.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Bluetooth\LE\KnownCharacteristics.json" />
+    <EmbeddedResource Include="Bluetooth\LE\KnownDescriptors.json" />
+    <EmbeddedResource Include="Bluetooth\LE\KnownServices.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+</Project>
